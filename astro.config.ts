@@ -13,6 +13,10 @@ import remarkDirective from "remark-directive"; /* handle ::: directives as node
 import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; /* add admonitions */
 import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 
+// remark, rehype Katex
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+
 // Rehype plugins
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeUnwrapImages from "rehype-unwrap-images";
@@ -80,8 +84,7 @@ export default defineConfig({
   ],
   markdown: {
     syntaxHighlight: false,
-
-    remarkPlugins: [remarkReadingTime, remarkDirective, remarkAdmonitions],
+    remarkPlugins: [remarkReadingTime, remarkDirective, remarkAdmonitions, remarkMath],
     remarkRehype: {
       footnoteLabelProperties: {
         className: [""],
@@ -105,11 +108,11 @@ export default defineConfig({
             light: "rose-pine-dawn", // after changing the theme, the server needs to be restarted
             dark: "rose-pine", // after changing the theme, the server needs to be restarted
           },
-
           transformers: [transformerNotationDiff(), transformerMetaHighlight()],
         },
       ],
       rehypeUnwrapImages,
+      rehypeKatex,
     ],
   },
   // https://docs.astro.build/en/guides/prefetch/

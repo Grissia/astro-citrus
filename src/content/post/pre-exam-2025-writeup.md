@@ -342,21 +342,28 @@ AIS3{tInY_We8_s3RV3R_W17H_FIL3_BR0Ws1n9_@5_@_Fe@tuRe}
 
 因為 server 端的簽章存在 LCG nonce 弱點，可以寫出  
 
-$$\begin{aligned}
-s_1 \cdot k_1 &= h_1 + r_1 \cdot d \quad \text{(1)} \\
-s_2 \cdot k_2 &= h_2 + r_2 \cdot d \quad \text{(2)} \\ 
-\text{其中 } k_2 &= A \cdot k_1 + C \end{aligned}$$
+$$
+\begin{aligned}
+s_1 \cdot k_1 &= h_1 + r_1 \cdot d \quad (1) \\
+s_2 \cdot k_2 &= h_2 + r_2 \cdot d \quad (2) \\ 
+k_2 &= A \cdot k_1 + C
+\end{aligned}
+$$
 
 所以我們整理之後就可以寫成
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \left( s_2 A - \frac{r_2 s_1}{r_1} \right) k_1 &= h_2 - s_2 C - \frac{r_2 h_1}{r_1} \\
 k_1 &= \frac{h_2 - s_2 C - \frac{r_2 h_1}{r_1}}{s_2 A - \frac{r_2 s_1}{r_1}} \bmod n
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 d &= \frac{s_1 k_1 - h_1}{r_1} \bmod n
-\end{aligned}$$
+\end{aligned}
+$$
 
 這樣就可以透過已知的資訊求出 k1，最後算出 d  
 
@@ -504,17 +511,23 @@ print(flag_bytes.decode(), end='')
 
 根據 LCG 生成的性質，可以寫出
 
-$$\mathbb{h}_1 \equiv \mathbb{h}_0 + b \pmod M$$
-$$\mathbb{h}_2 \equiv \mathbb{h}_1 + b \pmod M$$
+$$
+\mathbb{h}_1 \equiv \mathbb{h}_0 + b \pmod M \\
+\mathbb{h}_2 \equiv \mathbb{h}_1 + b \pmod M
+$$
 
 兩式相減後就會變成
 
-$$\mathbb{h}_2 - \mathbb{h}_1 \equiv a(\mathbb{h}_1 - \mathbb{h}_0) \pmod M$$
+$$
+\mathbb{h}_2 - \mathbb{h}_1 \equiv a(\mathbb{h}_1 - \mathbb{h}_0) \pmod M
+$$
 
 所以我們可以藉由這個式子，移項一下求出 a, b  
 那第 t 項就可以寫成
 
-$$a^{t}x + \frac {b(a^{t} - 1)} {a-1} \pmod M$$
+$$
+a^{t}x + \frac {b(a^{t} - 1)} {a-1} \pmod M
+$$
 
 接著就快樂爆破找 t，就可以算出 p, q 然後快樂 RSA  
 
