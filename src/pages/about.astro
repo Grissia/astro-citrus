@@ -2,38 +2,72 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	description: "I'm a starter theme for Astro.build",
-	title: "About",
+  description: "Grissia 的自我介紹",
+  title: "About",
 };
 ---
 
 <PageLayout meta={meta}>
+  <h1 class="title mb-6">About</h1>
+  <div class="prose prose-citrus max-w-none">
+    <p>
+      歡迎來到我的網站，這是我的自介區，很高興能認識你 :)<br />
+      如果有任何問題，歡迎寫信到我的信箱 
+      <a href="mailto:wasd.lhe@gmail.com" class="citrus-link">wasd.lhe@gmail.com</a>
+      聯繫我
+    </p>
 
-	<h1 class="title mb-6">About</h1>
-	<div class="prose prose-citrus max-w-none">
-		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
-		</p>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc" role="list">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
-		<p>
-			Clone or fork my <a
-				aria-label="github repository"
-				class="citrus-link inline-block"
-				href="https://github.com/artemkutsan/astro-citrus"
-				rel="noreferrer"
-				target="_blank">repo</a
-			> if you like me!
-		</p>
-	</div>
+    <h2>哈囉! 大家好我是格里西亞</h2>
 
+    <h3>自介</h3>
+    <p>
+      高三生，正在努力不考學測。<br />
+      平常喜歡打 <s>遊戲</s> CTF、看動漫、看 Vtuber
+      <s>我愛
+        <a href="https://www.youtube.com/@OumuaXDFP" target="_blank" rel="noreferrer">埃穆亞</a>
+      </s>。<br />
+      努力想變成現充的宅宅，歡迎各位來找我聊天
+      <s>讓我有點朋友</s>。
+    </p>
+
+    <h3>經歷</h3>
+    <ul class="list-inside list-disc">
+      <li>APCS: 觀念 5 級 實作 3 級</li>
+      <li>2024 THJCC 競賽組第 11 名</li>
+      <li>2024 SecurityFocus Online 3月場 學員</li>
+      <li>2024 SecurityFocus Online 5月場 學員</li>
+      <li>2024 SecurityFocus Online 6月場 學員</li>
+      <li>2024 APCSS x APCS Guide Camp 暑期學員</li>
+      <li>臺灣好厲駭第九屆高階培訓學員</li>
+      <li>iPAS 初級資安工程師</li>
+      <li>2024 資安技能金盾獎 國高中組 第二名</li>
+      <li>2024 THJCC winter 出題者</li>
+      <li>2025 THJCC 出題者</li>
+      <li>桃園高中資安讀書會 TYSHCTF 創辦人</li>
+      <li>2025 picoCTF -> 216 名</li>
+      <li>2025 OSCP Certified</li>
+      <li>2025 AIS3 學員</li>
+      <li>2025 AIS3 junior 學員</li>
+	  <li>2025 AIS3 Club 學員</li>
+      <li><s>APEX 17 季 水大師</s></li>
+    </ul>
+
+    <h3>蹤跡</h3>
+    <ul class="list-inside list-disc">
+      <li>2024 HITCON 菁英人才交流活動 -> Attendee</li>
+      <li>2025 SITCON -> Attendee</li>
+    </ul>
+
+    <h3>連結</h3>
+    <ul class="list-inside list-disc">
+      <li>
+        Github: <a href="https://github.com/Grissia" target="_blank" rel="noreferrer">Grissia</a>
+      </li>
+      <li>
+        Instagram: <a href="https://www.instagram.com/grissia001/" target="_blank" rel="noreferrer">grissia001</a>
+      </li>
+      <li>Discord: <strong>grissia001</strong></li>
+      <li>Email: <a href="mailto:wasd.lhe@gmail.com">wasd.lhe@gmail.com</a></li>
+    </ul>
+  </div>
 </PageLayout>
