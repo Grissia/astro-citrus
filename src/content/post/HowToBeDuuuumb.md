@@ -1,6 +1,6 @@
 ---
 title: "高中隔宿領隊教官新手指南"
-description: "Just another Vent post"
+description: "Yet another Vent post"
 publishDate: "15 Sep 2024"
 updatedDate: "25 Aug 2025"
 tags: ["vent post", "highschool"]

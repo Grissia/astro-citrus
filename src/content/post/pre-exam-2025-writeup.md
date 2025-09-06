@@ -1,6 +1,6 @@
 ---
 title: "AIS3 pre-exam 2025 Writeup"
-description: "picoCTF 2025 Writeup"
+description: "AIS3 pre-exam 2025 Writeup"
 publishDate: "1 Jul 2025"
 updatedDate: "25 Aug 2025"
 tags: ["CTF", "writeup", "AIS3"]

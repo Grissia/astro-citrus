@@ -1,5 +1,5 @@
 ---
-title: "How to: 用 hexo 創建部落格"
+title: "How to: Build Your Blog with Hexo"
 description: "Building a blog with Hexo"
 publishDate: "21 Aug 2024"
 updatedDate: "25 Aug 2025"

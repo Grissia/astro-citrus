@@ -1,6 +1,6 @@
 ---
 title: "那些我與 Docker 的辛酸血淚史"
-description: "How to deploy a Docker"
+description: "My Docker deploying experience"
 publishDate: "17 Dec 2024"
 updatedDate: "25 Aug 2025"
 tags: ["Docker", "Tutorial"]
