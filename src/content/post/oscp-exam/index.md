@@ -2,7 +2,6 @@
 title: "OSCP Certified - Experience & Mindsets"
 description: "How do I get my OSCP in highschool"
 publishDate: "6 Sep 2025"
-updatedDate: "25 Aug 2025"
 tags: ["pentest", "oscp", "experience"]
 ---
 
